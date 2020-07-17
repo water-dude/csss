@@ -12,52 +12,135 @@
     body {
         background-color: #eee;
         font-family: Arial, Helvetica, sans-serif;
+        
     } 
     header{
-        color: #fff;
-        background-color: #0072b0;
-        border-radius: .5em;
+            
+            color: #fff;
+            background-color: #0072b0;
+            width: 100%;
+            height: 3em;
+    }
+     h1{
+         margin-left: 0.7em;
+           padding-top: 0.001em;
+           padding-bottom: 0.1em;
+         color: #fff;
     }
     main{
-        display: block;
+        display: flex;
+    }
+    p {
+        padding-left: 1em;
+    }
+    h2{
+        padding-left: 0.3em;
+    }
+    .der {
+        margin-left: -1.5em;
+        margin-right: -1.5em;
+    }
+    .container{
+        display: table;
+        width: 100%;
+        border-spacing: 1.5em 0;
+        margin-left: 10em;
+        margin-top: 1em;
     }
     .main{
-        box-sizing: border-box;
+       display: table-cell;
         float: left;
         width: 70%;
         background-color: #fff;
         border-radius: .5em;
     }
     .sidebar{
-        box-sizing: border-box;
+       display: table-cell;
         float: left;
-        width: 30%;
+        width: calc(30% - 1.5em);
+        margin-left: 1.5em;
         padding: 1.5em;
         background-color: #fff;
         border-radius: .5em;
     }
+    .button-link{
+        display: block;
+        padding: .5em;
+        color: #fff;
+        background-color: #0090c9;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: .5em;
+    }
+    .button-link + .button-link {
+        margin-top: 1.5em;
+    }
+    .sponsor-link{
+        display: block;
+        color: #be2b2b;
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: 0.3em;
+    }
+    ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          }
+          li {
+            float: left;
+            display: inline;
+            margin-top: 1em;
+           }
+           .dis{
+             
+             margin-left: 1em ;
+           }
+
+          a {
+  display: inline;
+  padding: 8px;
+  background-color: #0072b0;
+
+}
 </style>
 </head>
   <body>
-      <header>
-          <h1>orasul deff</h1>
-      </header>
+    <div class="containe">
+        <header >
+          <ul>
+            <li class="dis"><h4>I-Delp</h4></li>
+            <li><a href="file:///home/dimar/csss/3.1.html" style="color: rgb(255, 255, 255);">Домой</a></li>
+            <li><a href="file:///home/dimar/csss/4.1.html" style="color: rgb(255, 255, 255);">Cоветы</a></li>
+          </ul>
+        </header>
+    </div>
+      <div class="der">
       <div class="container">
           <main class="main">
-              <h2>ajungeti</h2>
-              <p>fdfsfdff
-                  ddfsdfsdfd
-                  fsdfdsfdsfds
-                  fsdfdsfdsfsf
-                  dsfdfsdfdsfdsfds
+              <h2>Mining</h2>
+              <p>Майнинг, также добыча (от англ. mining — добыча полезных ископаемых) — деятельность по созданию новых структур (обычно речь идёт о новых блоках в блокчейне) для обеспечения
+                   функционирования криптовалютных платформ. За создание очередной структурной единицы обычно предусмотрено вознаграждение за счёт новых (эмитированных) единиц криптовалюты или 
+                   комиссионных сборов. Обычно майнинг сводится к серии вычислений с перебором параметров для нахождения хеша с заданными свойствами. Разные криптовалюты используют разные модели 
+                   вычислений, но они всегда достаточно длительны по времени для нахождения приемлемого варианта и быстры для проверки найденного решения (см. Доказательство выполнения работы). 
+                   Такие вычисления используются алгоритмами криптовалют для обеспечения защиты от повторного расходования одних и тех же единиц, а вознаграждение стимулирует людей расходовать 
+                   свои вычислительные мощности и поддерживать работу сетей.
+                   Майнинг — не единственная технология создания новых блоков и обеспечения эмиссии. Альтернативами являются форжинг (минтинг) и ICO. Обычно используется только одна технология,
+                    но в некоторых криптовалютах используют комбинации из них.
               </p>
           </main>
-          <aside class="sidebar">
-              <div class="widget"></div>
-              <div class="widget"></div>
-              <div class="gizmo"></div>
+          <aside class="sidebar ">
+             <a href="https://ru-ru.facebook.com/pages/category/Cause/faceboccom-432024310267106/" class="button-link">мы в Facebook</a>
+             <a href="https://twitter.com/explore" class="button-link">мы в Twitter</a>
+             <a href="/sponsor" class="sponsor-link">  Cтать спонсором</a>
           </aside>
       </div>
+      </div>
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+      </svg>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
