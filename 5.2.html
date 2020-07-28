@@ -47,10 +47,11 @@
             float: left;
             display: inline;
             margin-top: 1em;
+            margin-left: 1em;
            }
            a {
             display: inline;
-            padding: 8px;
+            
             background-color: #0072b0;
            }
            .dis{
@@ -59,6 +60,11 @@
              margin-top: 0.6em ;
            }
             .tile{
+             padding: 1.5em;
+             background-color: #fff;
+             margin-bottom: 8.1em;
+           }
+           .tile1{
              padding: 1.5em;
              background-color: #fff;
            }
@@ -71,6 +77,7 @@
            }
            .column-main{
                flex: 2;
+               margin-right: 0em;
            }
            .column-sidebar{
                flex: 1;
@@ -94,10 +101,48 @@
                padding: .5em 1em;
                cursor: pointer;
            }
-    </style>
+           .centered{
+             text-align: center;
+             padding-top:em;
+           }
+           .cost{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             line-height: .7;
+             margin-bottom: 1em;
+             margin-top: 1em;
+           }
+           .cost > span{
+             margin-top: 0;
+             
+           }
+           .cost-currency{
+             font-size: 2em;
+           }
+           .cost-roubles{
+             font-size: 4em;
+           }
+           .cost-kopecks{
+             font-size: 1.5em;
+             align-self: flex-start;
+           }
+           .cta-button{
+             text-align: center;
+             display: block;
+             background-color: #cc6b5a;
+             color: white;
+             text-decoration: none;
+             width: 12em;
+             margin-left: 7.5em;
+             margin-right: 5.5em;
+           }
+          
+    
+        </style>
 </head>
   <body>
-      <div class="container">
+      
           <header>
             <ul>
                 <li class="dis"><h4>I-Delp</h4></li>
@@ -108,10 +153,7 @@
           </header>
           <main class="flex">
               <div class="column-main tile">
-                  <h1> drumul drept spre lucru</h1>
-                  <p>fgfgfgsfgfgdfgfgsfggfgsfdgfsgfsgfgsfdg
-                      fgsfdgfgfdsfsDG,<b>fdffdf</b>fdsfdsfsdfds
-                  </p>
+                 <img src="https://cryptocartel.club/files/global/1024%D1%85683_kak_podklyuchit_fermu_3.jpg" style="width:50em;">
                   </div>
                   <div class="column-sidebar">
                       <div class="tile">
@@ -131,17 +173,17 @@
                           </form>
                       </div>
                       <div class="tile centered">
-                          <small>sgfsfdgdfsgfs</small>
-                          <div class="cost">
+                          <small>Цена</small>
+                          <br>
+                          <div class="cost  text-center">
                               <span class="cost-currency">$</span>
-                              <span class="cost-roubles">9999</span>
-                              <span class="kopecks">.000</span>
+                              <span class="cost-roubles">999</span>
+                              <span class="cost-kopecks">.00</span>
                             </div>
                             <a class="cta-button" href="/pricing">
-                            inregistreazate</a>
+                              зарегистрироваться</a>
                       </div>
                   </div>
-              </div>
           </main>
       </div>
     <!-- Optional JavaScript -->
