@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <style class="text/css">
+              body{
+                  background-color: aquamarine;
+                  font-family: Arial, Helvetica, sans-serif;
+              }        
+              .portofolio{
+                  display: grid;
+                  grid-template-columns: repeat(auto-fill, minmax(330px,1fr));
+                  grid-auto-rows: 1fr;
+                  grid-gap: 1em;
+                  grid-auto-flow: dense;
+              }
+              .portofolio .featured{
+                  grid-row: span 2;
+                  grid-column: span 2;
+              }
+              .portofolio > figure{
+                  margin: 0em;
+                  display: flex;
+                  flex-direction: column;
+                  margin: 0;
+              }
+              .portofolio img{
+                 max-width: 100%;
+                 flex: 1;
+                 object-fit:  fill;
+
+              }
+              .portofolio figcaption{
+                  padding: 0.3em 0.8em;
+                  background-color: black;
+                  color:blue ;
+                  text-align: right;
+              }
+              .grid{
+                  display: grid;
+                  height: 1200px;
+                  grid grid-template-rows: repeat(4, 200px);
+              }
+        </style>
+</head>
+  <body>
+      <div class="portofolio">
+        <figure class="featured">
+             <img src="https://istoriiregasite.files.wordpress.com/2010/06/maimuta.jpg?w=400" alt="maimuta">
+             <figcaption>maimuta</figcaption>
+        </figure>
+
+        <figure >
+            <img src="https://www.opiniatimisoarei.ro/wp-content/uploads/2016/02/vultur-654x336.jpg" alt="vultur">
+            <figcaption>vultur</figcaption>
+        </figure>
+
+        <figure class="featured">
+            <img src="https://devoratoruldecreiere.files.wordpress.com/2015/04/bear-cubs-537x335.jpg" alt="urs">
+            <figcaption>urs</figcaption>
+        </figure>
+
+        <figure >
+            <img src="https://scontent.fkiv1-1.fna.fbcdn.net/v/t1.0-9/44568851_995490947320475_279495692571901952_n.jpg?_nc_cat=100&_nc_sid=85a577&_nc_ohc=_0BeAilyU14AX-cQdsz&_nc_ht=scontent.fkiv1-1.fna&oh=75de18662fec2743707c4efa9396afa6&oe=5F4632D8" alt="vaca">
+            <figcaption>vaca</figcaption>
+        </figure>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

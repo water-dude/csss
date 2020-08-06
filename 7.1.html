@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       <style class="text/css">
+          body {
+              font-family: Arial, Helvetica, sans-serif;
+              min-height: 200vh;
+              margin: 0;
+          }   
+          button{
+              padding: .5em .7em;
+              border: 1px solid #8d8d8d;
+              background-color: white;
+              font-size: 1em;
+          }
+          .top-banner{
+              padding: 1em 0;
+              background-color: #ffd698;
+          }
+          .top-banner-inner{
+              width: 80%;
+              max-width: 1000px;
+              margin: 0 auto;
+          }
+          .modal{
+              display: none;
+          }
+          .modal-backdrop {
+              position:fixed;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              background: rgba(0,0,0,0.5);
+          }
+          .modal-body{
+              position: fixed;
+              top: 3em;
+              bottom: 3em;
+              right: 20%;
+              left: 20%;
+              padding: 2em  3em;
+              background-color: white;
+              overflow: auto;
+          }
+          .modal-close{
+              cursor: pointer;
+          }
+    </style>
+</head>
+  <body>
+      <header class="top-banner">
+          <div class="top-banner-inner">
+              <p>fdfdsfdsdffsdfsfsffdfdfsfd
+                  <button id="open">deferr</button>
+              </p>
+          </div>
+      </header>
+      <div class="modal" id="modal">
+          <div class="modal-backdrop"></div>
+          <div class="modal-body">
+              <button class="modal-clone" id="close">inchis</button>
+              <h2> mesaje noi  </h2>
+              <p>ffdgfgdfgfdglfgdlffhgdhdf</p>
+          <form>
+              <p>
+                  <label for="email">adresa mail</label>
+                  <input type="text" name="email">
+              </p>
+              <p><button type="submit">aboneazate</button></p>
+          </form>
+      </div>
+      </div>
+
+      <script>
+    var button = document.getElementById('open');
+    var close =  document.getElementById('close');
+    var modal = document.get  ElementById('modal');
+
+       button.addEventListener('click' , function(event) {
+           event.preventDefault();
+           modal.style.display = 'block';
+       });
+
+       close.addEventListener('click' , function(event) {
+        event.preventDefault();
+        modal.style.display = 'none';
+    });
+      </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
