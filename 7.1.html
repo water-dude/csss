@@ -30,7 +30,8 @@
               margin: 0 auto;
           }
           .modal{
-              display: none;
+              display: block;
+              z-index: 1;
           }
           .modal-backdrop {
               position:fixed;
@@ -39,6 +40,8 @@
               bottom: 0;
               left: 0;
               background: rgba(0,0,0,0.5);
+              z-index: 2;
+
           }
           .modal-body{
               position: fixed;
@@ -49,9 +52,46 @@
               padding: 2em  3em;
               background-color: white;
               overflow: auto;
+              z-index: 3x;
           }
           .modal-close{
               cursor: pointer;
+              position: absolute;
+              top: 0.3em;
+              right: 0.3em;
+              padding: 0.3em;
+              font-size: 2em;
+              height: 1em;
+              width: 1em;
+              text-indent: 10em;
+              overflow: hidden;
+              border: 0;
+          }
+          .modal-close:;::after{
+              position: absolute;
+              line-height: 0.5;
+              top:0.2em;
+              left: 0.1em;
+              text-indent: 0;
+              content: "\00d7";
+          }
+          .container{
+              width: 80%;
+              max-width: 1000px;
+              margin: 1em auto;
+          }
+          .dropdown{
+              display: inline-block;
+              position: relative;
+          }
+          .dropdown-label{
+              padding: 0.5em 1.5em;
+              border: 1px solid #ccc;
+              background-color: #eee;
+          }
+          .dropdown-menu{
+              display:none;
+              position: absolute;
           }
     </style>
 </head>
@@ -79,10 +119,30 @@
       </div>
       </div>
 
+
+
+
+
+       <div class="container"><nav>
+           <div class="dropdown">
+               <div class="dropdown-label">meniu</div>
+               <div class="dropdown-menu">
+                   <ul class="submenu">
+                       <li><a href="/">f</a></li>
+                       <li><a href="/">fd</a></li>
+                       <li><a href="/">fr</a></li>
+                       <li><a href="/">ft</a></li>
+                       <li><a href="/">fy</a></li>
+                   </ul>
+               </div>
+           </div>
+           </nav>
+       </div>
+
       <script>
     var button = document.getElementById('open');
     var close =  document.getElementById('close');
-    var modal = document.get  ElementById('modal');
+    var modal = document.getElementById('modal');
 
        button.addEventListener('click' , function(event) {
            event.preventDefault();
@@ -90,7 +150,7 @@
        });
 
        close.addEventListener('click' , function(event) {
-        event.preventDefault();
+        event.preventDefault(); 
         modal.style.display = 'none';
     });
       </script>
